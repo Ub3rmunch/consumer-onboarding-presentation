@@ -1,0 +1,17 @@
+{
+  "name": "consumer-onboarding-presentation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev slides.md",
+    "build": "slidev build slides.md --base /consumer-onboarding-presentation/",
+    "export": "slidev export slides.md"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.14.2",
+    "@slidev/theme-default": "^0.25.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.59.1"
+  }
+}

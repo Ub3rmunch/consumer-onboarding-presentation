@@ -1,0 +1,508 @@
+@font-face {
+  font-family: 'TW Averta';
+  src: url('/fonts/TW-Averta-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TW Averta';
+  src: url('/fonts/TW-Averta-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TW Averta';
+  src: url('/fonts/TW-Averta-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-latin-variable-wghtOnly-normal.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --wise-forest: #163300;
+  --wise-bright-green: #9fe870;
+  --wise-light-green: #cdffad;
+  --wise-extra-light-green: #ecffe0;
+  --wise-dark-elevated: #223d0d;
+  --wise-content-primary: #37517e;
+  --wise-content-secondary: #5d7079;
+  --wise-accent: #0097c7;
+  --wise-negative: #cf2929;
+  --wise-positive: #008026;
+  --wise-warning: #9a6500;
+  --wise-amber: #ffb619;
+  --wise-bg-neutral: #f5f7f8;
+  --wise-border: #e2e6e9;
+
+  --slidev-theme-primary: var(--wise-forest);
+  --slidev-theme-cover-bg: var(--wise-forest);
+}
+
+.slidev-layout {
+  font-family: 'Inter', 'TW Averta', Helvetica, Arial, sans-serif;
+  color: var(--wise-forest);
+  padding: 1.75rem 2.5rem 1.5rem;
+  border-top: 3px solid var(--wise-bright-green);
+}
+
+.slidev-layout.full-bleed {
+  border-top: none;
+}
+
+.slidev-layout h1 {
+  font-family: 'TW Averta', 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--wise-forest);
+  font-size: 1.7rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.slidev-layout h2 {
+  font-family: 'TW Averta', 'Inter', sans-serif;
+  font-weight: 600;
+  color: var(--wise-forest);
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.3rem;
+}
+
+.slidev-layout h3 {
+  font-family: 'TW Averta', 'Inter', sans-serif;
+  font-weight: 600;
+  color: var(--wise-forest);
+  font-size: 1rem;
+  line-height: 1.25;
+  margin-bottom: 0.2rem;
+}
+
+.slidev-layout p,
+.slidev-layout li {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #2c2c2c;
+}
+
+.slidev-layout li {
+  margin-bottom: 0.1rem;
+}
+
+.slidev-layout code {
+  font-size: 0.78rem;
+  background: var(--wise-light-green);
+  color: var(--wise-forest);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 1px solid #b5e89a;
+}
+
+.slidev-layout pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  color: #e0e6ed !important;
+}
+
+.slidev-layout pre {
+  background: #1a1a2e !important;
+  border-radius: 8px;
+  padding: 0.65rem 0.85rem !important;
+  color: #e0e6ed !important;
+}
+
+.slidev-layout pre code .line,
+.slidev-layout pre code span,
+.slidev-layout pre code .line span {
+  color: #e0e6ed !important;
+}
+
+.slidev-layout table {
+  font-size: 0.72rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--wise-border);
+}
+
+.slidev-layout table th {
+  background: var(--wise-forest);
+  color: white;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  text-align: left;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.slidev-layout table td {
+  padding: 0.25rem 0.6rem;
+  border-bottom: 1px solid var(--wise-border);
+  vertical-align: top;
+}
+
+.slidev-layout table tr:last-child td {
+  border-bottom: none;
+}
+
+.slidev-layout table tr:nth-child(even) td {
+  background: #f8faf7;
+}
+
+.slidev-layout strong {
+  color: var(--wise-forest);
+  font-weight: 600;
+}
+
+.slidev-layout blockquote {
+  border-left: 3px solid var(--wise-bright-green);
+  background: var(--wise-extra-light-green);
+  padding: 0.35rem 0.75rem;
+  border-radius: 0 8px 8px 0;
+  margin: 0.4rem 0;
+  font-size: 0.78rem;
+}
+
+.slidev-layout a {
+  color: var(--wise-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.slidev-layout a:hover {
+  border-bottom-color: var(--wise-accent);
+}
+
+/* Full-bleed slides — cover and section dividers */
+.slidev-layout.full-bleed {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.slidev-layout.full-bleed > .my-auto {
+  margin: 0 !important;
+  height: 100% !important;
+}
+
+.cover-slide {
+  background: var(--wise-forest);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 5rem;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.cover-slide h1 {
+  color: var(--wise-bright-green);
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.cover-slide p {
+  color: #e8ebe6;
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+}
+
+.section-slide {
+  background: var(--wise-forest);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 5rem;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.section-slide h1 {
+  color: var(--wise-bright-green);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.section-slide p {
+  color: #c5ccb8;
+  font-size: 1rem;
+}
+
+/* Tag/badge styling */
+.tag {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.tag-green {
+  background: var(--wise-light-green);
+  color: var(--wise-forest);
+}
+
+.tag-amber {
+  background: #fff3d0;
+  color: #6b4d00;
+}
+
+.tag-red {
+  background: #ffe0e0;
+  color: #8b1a1a;
+}
+
+.tag-blue {
+  background: #e0f4ff;
+  color: #005f80;
+}
+
+/* Flow diagram blocks */
+.flow-box {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.flow-shared {
+  background: #e8ebe6;
+  color: var(--wise-forest);
+}
+
+.flow-unique {
+  background: var(--wise-forest);
+  color: white;
+}
+
+.flow-conditional {
+  background: var(--wise-amber);
+  color: #3a341c;
+}
+
+/* Two-column layout helper */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+/* Card component */
+.card {
+  background: white;
+  border: 1px solid var(--wise-border);
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+}
+
+.card-green {
+  background: var(--wise-extra-light-green);
+  border-color: var(--wise-light-green);
+}
+
+.card-dark {
+  background: var(--wise-forest);
+  color: white;
+  border-color: var(--wise-dark-elevated);
+}
+
+.card-dark h3,
+.card-dark strong {
+  color: var(--wise-bright-green);
+}
+
+/* Metric callout */
+.metric {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.metric-value {
+  font-family: 'TW Averta', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--wise-forest);
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 0.7rem;
+  color: var(--wise-content-secondary);
+  margin-top: 0.15rem;
+}
+
+.metric-negative .metric-value {
+  color: var(--wise-negative);
+}
+
+/* Step sequence visualization */
+.step-sequence {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+
+.step-pill {
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.step-arrow {
+  color: #a0a0a0;
+  font-size: 0.7rem;
+  margin: 0 0.15rem;
+}
+
+/* Mermaid diagram overrides */
+.mermaid {
+  font-family: 'Inter', sans-serif !important;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.mermaid svg {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.mermaid .node rect {
+  stroke: var(--wise-border) !important;
+}
+
+.mermaid .node polygon {
+  stroke: var(--wise-border) !important;
+  fill: var(--wise-bg-neutral) !important;
+}
+
+.mermaid .node .label {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.8rem !important;
+}
+
+.mermaid .edgeLabel {
+  font-size: 0.72rem !important;
+  background: white !important;
+}
+
+.mermaid .messageText {
+  font-size: 0.75rem !important;
+}
+
+.mermaid .actor {
+  fill: var(--wise-bg-neutral) !important;
+  stroke: var(--wise-border) !important;
+}
+
+.mermaid .note {
+  fill: #fff9e6 !important;
+  stroke: var(--wise-amber) !important;
+}
+
+/* Ensure slide content doesn't overflow */
+.slidev-layout .slidev-page {
+  overflow: hidden;
+}
+
+/* Footer/page number */
+.slidev-page-number {
+  font-size: 0.7rem;
+  color: var(--wise-content-secondary);
+}
+
+/* v-click transition refinement */
+.slidev-vclick-target {
+  transition: all 0.4s ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+/* Sequence diagram note styling */
+.mermaid .activation {
+  fill: var(--wise-extra-light-green) !important;
+  stroke: var(--wise-bright-green) !important;
+}
+
+.mermaid .loopLine {
+  stroke: var(--wise-content-secondary) !important;
+}
+
+/* Slide transition */
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+/* Progress bar */
+.slidev-progress {
+  background: var(--wise-bright-green) !important;
+}
+
+/* Tighten default Slidev/markdown spacing */
+.slidev-layout p {
+  margin: 0.2rem 0;
+}
+
+.slidev-layout h2,
+.slidev-layout h3 {
+  margin-top: 0.3rem;
+}
+
+.slidev-layout ul,
+.slidev-layout ol {
+  margin: 0.15rem 0;
+  padding-left: 1.2rem;
+}
+
+.slidev-layout table {
+  margin: 0.2rem 0;
+}
+
+.slidev-layout .slidev-page-content {
+  overflow: hidden;
+}
