@@ -1393,12 +1393,11 @@ If you're new to the codebase, start with ConsumerOnboardingFlowController — t
 
 | Resource | Location |
 |---|---|
-| **SOT Figma** | Personal Onboarding - Source of Truth |
-| **Backend Repo** | `consumer-onboarding-service` |
-| **Web Repo** | `consumer-onboarding-web` |
-| **Architecture** | Confluence: Architecture Overview |
-| **Tracking Plan** | Confluence: Tracking Plan |
-| **Runbook** | Confluence: On-call Rota and Runbook |
+| **SOT Figma** | [Personal Onboarding Flows](https://www.figma.com/design/8QhoOlv45zPvZkPzHUgcXC/%E2%9A%A1%EF%B8%8F-SOT-Consumer-Onboarding-Flows?node-id=18402-3183&t=CM9yeMURRestnqn0-1) |
+| **Backend Repo** | [consumer-onboarding-service](https://github.com/transferwise/consumer-onboarding-service) |
+| **Web Repo** | [consumer-onboarding-web](https://github.com/transferwise/consumer-onboarding-web) |
+| **Architecture** | [Architecture Overview](https://transferwise.atlassian.net/wiki/spaces/C20/pages/2904426073/Consumer+Onboarding+-+Architecture+Overview) |
+| **Runbook** | [On-call Rota and Runbook](https://transferwise.atlassian.net/wiki/spaces/C20/pages/4088967309/Consumer+Onboarding+On-call+Rota+and+Runbook) |
 | **Snowflake** | `rpt_product.consumer_onboarding_flow` |
 
 </div>
@@ -1415,8 +1414,11 @@ If you're new to the codebase, start with ConsumerOnboardingFlowController — t
 | `tracking-collector` | Analytics collection |
 
 ### Slack
-- `#consumer-onboarding-private`
-- `#consumer-onboarding-public`
+- [#consumer-onboarding-private](https://transferwise.slack.com/channels/consumer-onboarding-private)
+- [#consumer-onboarding-public](https://transferwise.slack.com/channels/consumer-onboarding-public)
+
+### Confluence
+- [Consumer Onboarding Space](https://transferwise.atlassian.net/wiki/spaces/C20)
 
 </div>
 </div>
